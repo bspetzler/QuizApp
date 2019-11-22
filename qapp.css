@@ -1,49 +1,66 @@
 html, body {
-    background-color: black;
+  height: 100%;
+  }
+  
+  * {
+    border-style: border-box;
+  }
+  
+  body {
+   font-size: 25px;
+   font-weight: bolder;
+   text-align: center;
+   filter: contrast(1);
+   margin: 0;
+  }
+  
+  .bkgrnd{
+    position: relative;
+    background-image: url(https://wallpapercave.com/wp/mToeXqq.jpg);
     height: 100%;
-    }
-    
-    * {
-      border-style: border-box;
-    }
-    
-    body {
-     font-size: 25px;
-     font-weight: bolder;
-     text-align: center;
-     filter: contrast(1);
-     margin: 0;
-    }
-    
-    .bkgrnd{
-        position: relative;
-        background-image: url(https://wallpapercave.com/wp/mToeXqq.jpg);
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    header1, header3{
-      display: block;
-      text-align: center;
-      font-size: 35px;
-      margin-bottom: 30px;
-      color: white;
-      mix-blend-mode: difference;
-    }
-    
-    header3{
-      font-weight: bolder;
-      font-size: 55px;
-      margin-bottom: 20px;
-    }
-    
-    fieldset{
-      border: none;
-    }
-    
-    label{
-      mix-blend-mode: difference;
-      color: orange;
-    }
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  header1, header3{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: orange;
+  }
+  
+  header3{
+    font-weight: bolder;
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  
+  fieldset{
+    border: none;
+  }
+  
+  label{
+    color: orange;
+  }
+  
+  .results{
+    color: white;
+    list-style: none;
+  }
+  
+  .answer{
+    font-size: 35px;
+  }
+  
+  input[type='submit']{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  footer > header1{
+    color: black;
+    background-color: white;
+  }
