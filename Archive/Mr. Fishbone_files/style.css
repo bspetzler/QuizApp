@@ -6,6 +6,10 @@ html, body {
     border-style: border-box;
   }
   
+  .hide{
+    display: none;
+  }
+
   body {
    font-size: 25px;
    font-weight: bolder;
