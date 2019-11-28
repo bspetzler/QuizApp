@@ -6,10 +6,6 @@ html, body {
     border-style: border-box;
   }
   
-  .hide{
-    display: none;
-  }
-
   body {
    font-size: 25px;
    font-weight: bolder;
@@ -20,11 +16,15 @@ html, body {
   
   .bkgrnd{
     position: relative;
-    background-image: url(https://wallpapercave.com/wp/mToeXqq.jpg);
     height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .entry{
+    display: block;
+    color: white;
   }
   
   header1, header3{
