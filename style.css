@@ -22,9 +22,25 @@ html, body {
     background-repeat: no-repeat;
   }
 
-  .entry{
+  .question{
     display: block;
     color: black;
+  }
+
+  .status{
+    border: 2px solid black;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .status > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   
   header1, header3{
@@ -32,7 +48,7 @@ html, body {
     text-align: center;
     font-size: 35px;
     margin-bottom: 30px;
-    color: orange;
+    color: gray;
   }
   
   header3{
@@ -41,12 +57,19 @@ html, body {
     margin-bottom: 20px;
   }
   
-  fieldset{
+  .questions{
+    border: solid 2px black;
+    padding: 5px;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .blank{
     border: none;
   }
   
   label{
-    color: orange;
+    color: gray;
   }
   
   .results{
@@ -55,9 +78,21 @@ html, body {
   }
   
   .answer{
-    font-size: 35px;
+    font-size: 20px;
+    float: left;
+  }
+
+  .ans-label{
+    float: left;
+    color: lightgray;
+    font-size: 20px;
+    padding-left: 20px;
   }
   
+  input[type='radio']{
+    float: left;
+  }
+
   input[type='submit']{
     display: block;
     margin: 0 auto;
