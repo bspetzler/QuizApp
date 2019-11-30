@@ -13,18 +13,17 @@ html, body {
    filter: contrast(1);
    margin: 0;
   }
-  
-  .bkgrnd{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
   .question{
     display: block;
     color: black;
+  }
+
+  .questions{
+    border: solid 2px black;
+    padding: 5px;
+    margin: 0 auto;
+    width: 50%;
   }
 
   .status{
@@ -56,25 +55,9 @@ html, body {
     font-size: 55px;
     margin-bottom: 20px;
   }
-  
-  .questions{
-    border: solid 2px black;
-    padding: 5px;
-    margin: 0 auto;
-    width: 50%;
-  }
 
   .blank{
     border: none;
-  }
-  
-  label{
-    color: gray;
-  }
-  
-  .results{
-    color: black;
-    list-style: none;
   }
   
   .answer{
@@ -91,15 +74,4 @@ html, body {
   
   input[type='radio']{
     float: left;
-  }
-
-  input[type='submit']{
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  
-  footer > header1{
-    color: black;
-    background-color: white;
   }
