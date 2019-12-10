@@ -7,16 +7,6 @@
   console.log('this is the number of trys: '+trys);
   startQuiz();
 
-//function handlePage() {
-    // handleNewProblem(); // if the function is not in here, the page will initiate default behavior
-    // if the function is called as the page opens, it will start looking for the input (click, submittion etc.)
-    //startQuiz();
-    //console.log('`handlePage` ran');
-    //changePage();
-    //handleItemCheckClicked();
-    //handleDeleteItemClicked();
-  //}
-
   function startQuiz() {
     $('#start').on('click', function(event) {
       console.log('`startQuiz` ran');
@@ -32,16 +22,13 @@
                  $('#start').fadeOut(1000, function(){
                      const newPage = $(data).filter('form').html();
                      const foot = $(data).filter('footer').html();
-                     //$('form').addClass('question-1') 
                      // gets form content from the start page (index.html), does not work for getting 'fieldset'
                      // has to look for a parent element, if a child is looked for then newPage is undefined
                      //console.log(data); // data is page2.1.html
                      //console.log(newQ);
                      //console.log(foot);
                      $('form').html(newPage).hide().fadeIn(1000);
-                     //$('fieldset').hide().fadeIn(1000);
                      $('footer').html(foot).hide().fadeIn(1000);
-                     //$('ul').hide().fadeIn(1000);
                      $('footer').removeClass('blank');
                      countQuestions();
                  })
@@ -102,15 +89,6 @@ function submitQuestion(answer) {
       console.log('href is '+href);
       //window.history.pushState(null,null,href); //prints false to console
 
-      //<?php
-        //$myfile = fopen("showAnswer.html", "w") or die("Unable to open file!");
-        //$txt = "John Doe\n";
-        //fwrite($myfile, $txt);
-        //$txt = "Jane Doe\n";
-        //fwrite($myfile, $txt);
-        //fclose($myfile);
-      //?>
-
 
 
       if(document.getElementById(answer).checked) {
@@ -126,7 +104,6 @@ function submitQuestion(answer) {
                      // has to look for a parent element, if a child is looked for then newPage is undefined
                      const foot = $(data).filter('footer').html();
                      console.log('right answer');
-                     //$('form').addClass('question-1')
                      //console.log(data); // data is showAnswer.html
                      //console.log(but); // but is 
                      $('form').html(newPage);
@@ -153,9 +130,6 @@ function submitQuestion(answer) {
                        $('.button').html("<button type='submit' id='submit' href='Finish.html'>Finish Quiz</button>").hide().fadeIn(500);
                        nextQuestion();
                      };
-                     //$('form').fadeIn(250);
-                     //$('footer').html(foot);
-                     //$('footer').fadeIn(250);
                      
                  })
              }
@@ -166,7 +140,6 @@ function submitQuestion(answer) {
         console.log('`submitQuestion` ran - wrong answer');
         let sel = $("input[name='answer']:checked").val();
         console.log('sel is '+sel);
-        //$('#'+sel).html().nextSibling.setAttribute("id", "selection");
         //https://www.superhi.com/video/simple-page-transitions-with-jquery-and-javascript
         $.ajax({
              url: href,
@@ -176,7 +149,6 @@ function submitQuestion(answer) {
                      const foot = $(data).filter('footer').html();
                      console.log('wrong answer');
                      //console.log(newPage);
-                     //$('form').addClass('question-1')
                      //console.log(data); // data is showAnswer.html
                      //console.log(but); // but is
                      $('form').html(newPage); // add the 'form' element of Show Answer to the page
@@ -224,11 +196,8 @@ function submitQuestion(answer) {
                    $('.questions, footer').fadeOut(500, function(){
                        const newPage = $(data).filter('form').html();
                        const foot = $(data).filter('footer').html();
-                       //$('form').addClass('question-1')
-                       // gets form content from the start page (index.html), does not work for getting 'fieldset'
-                       // has to look for a parent element, if a child is looked for then newPage is undefined
-                       //console.log(data); // data is showAnswer.html
-                       //console.log(but); // but is
+                       //console.log(data);
+                       //console.log(but);
                        $('form').html(newPage);
                        $('fieldset').hide().fadeIn(500);
                        $('footer').html(foot).hide().fadeIn(500);
@@ -278,9 +247,6 @@ function submitQuestion(answer) {
                  $('#start-over, form').fadeOut(1000, function(){
                      const newPage = $(data).filter('form').html();
                      const foot = $(data).filter('footer').html();
-                     //$('form').addClass('question-1') 
-                     // gets form content from the start page (index.html), does not work for getting 'fieldset'
-                     // has to look for a parent element, if a child is looked for then newPage is undefined
                      //console.log(data); // data is page2.1.html
                      console.log(newPage);
                      console.log(foot);
