@@ -11,7 +11,7 @@
     <header1>Riddle Quiz</header1>
     <header3>How well can you Riddle?</header3>
     
-    <form role='form' action='page2.3.html'>
+    <form role='form' action='page2.5.html'>
       <fieldset class='questions'>
         <label for='question' class='question'>Question</label>
         <label for='question' class='question'>Oops!</label>
@@ -25,12 +25,14 @@
 
     <footer class='status'>
       <ul>
-        <li>Question 1/5</li>
+        <li>Question 2/5</li>
         <li>Score _/5</li>
       </ul>
     </footer>
 
   </body>
 
-  <script src="script.js"></script>
+  <script type="text/javascript" src="js/cuid.js"></script><!-- this must be before script.js so cuid loads and can be used in script.js--> 
+  <script src="js/jquery.js"></script> <!-- this must be before script.js so jQuery loads and can be used in script.js--> 
+  <script src="js/script.js"></script>
 </html>

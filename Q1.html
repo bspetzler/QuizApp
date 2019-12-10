@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Riddle Quiz - Questions</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class='bkgrnd'>
+    <header1>Riddle Quiz</header1>
+    <header3>How well can you Riddle?</header3>
+    
+    <form role='form'>
+      <fieldset class='questions'>
+        <label id='question' for='question' class='question'>Which of the following months has 28 days?</label>
+        <div id='message' for='space' class='empty'></div> <!-- using label here instead of div does not work for the css, which leaves this line blank before and answer is submitted-->
+        
+        <p>
+        <input id='answer-1' type="radio" name="answer" value="answer-1"><label for='answer-1' class='answer'>February</label><a id='answer-1-text' class='ans-label'></a><br>
+        </p>
+        <p>
+        <input id='answer-2' type="radio" name="answer" value="answer-2"><label for='answer-2' class='answer'>March</label><a id='answer-2-text' class='ans-label'></a><br>
+        </p>
+        <p>
+        <input id='answer-3' type="radio" name="answer" value="answer-3"><label for='answer-3' class='answer'>May</label><a id='answer-3-text' class='ans-label'></a><br>
+        </p>
+        <p>
+        <input id='answer-4' type="radio" name="answer" value="answer-4"><label for='answer-4' class='answer'>All the above</label><a id='answer-4-text' class='ans-label'></a><br>
+        </p>
+
+        <div class='button'>
+          <button type='submit' id='submit' href='Q1.html'>Submit</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <footer class='status'>
+      <ul>
+        <li>Question 1/5</li>
+        <li>Score <a id='score'></a>/<a id='trys'></a></li>
+      </ul>
+    </footer>
+
+  </body>
+
+  <script type="text/javascript" src="js/cuid.js"></script><!-- this must be before script.js so cuid loads and can be used in script.js--> 
+  <script src="js/jquery.js"></script> <!-- this must be before script.js so jQuery loads and can be used in script.js--> 
+  <script src="js/script.js"></script>
+</html>

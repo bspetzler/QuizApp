@@ -1,17 +1,35 @@
-html, body {
-  height: 100%;
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+    background-color: white;
+  }
+
+  body{
+    background: url('img/woods-background.jpg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    filter: contrast(1);
+    margin: 0;
   }
   
   * {
     border-style: border-box;
   }
-  
-  body {
-   font-size: 25px;
-   font-weight: bolder;
-   text-align: center;
-   filter: contrast(1);
-   margin: 0;
+
+  p{
+    margin: 0;
+  }
+
+  .empty:after{
+    content:"";
+    display:inline-block;
+    width:0px;
   }
 
   .question{
@@ -24,6 +42,16 @@ html, body {
     padding: 5px;
     margin: 0 auto;
     width: 50%;
+    background-image: linear-gradient(to bottom right, lightgray, white);
+    border-radius: 5px;
+  }
+
+  .red{
+    color: red;
+  }
+
+  .green{
+    color: green;
   }
 
   .status{
@@ -31,9 +59,11 @@ html, body {
     position: fixed;
     right: 0;
     bottom: 0;
-    margin-bottom: 0;
-    font-size: 15px;
+    margin: 10px;
+    font-size: 20px;
     padding: 5px;
+    color: black;
+    background-image: linear-gradient(to bottom right, lightgray, white);
   }
 
   .status > ul{
@@ -47,7 +77,8 @@ html, body {
     text-align: center;
     font-size: 35px;
     margin-bottom: 30px;
-    color: gray;
+    color: white;
+    mix-blend-mode: exclusion;
   }
   
   header3{
@@ -58,6 +89,7 @@ html, body {
 
   .blank{
     border: none;
+    background: none;
   }
   
   .answer{
@@ -67,7 +99,7 @@ html, body {
 
   .ans-label{
     float: left;
-    color: lightgray;
+    color: blue;
     font-size: 20px;
     padding-left: 20px;
   }
@@ -75,3 +107,46 @@ html, body {
   input[type='radio']{
     float: left;
   }
+
+  button[type="submit"] {
+  width: 200px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background: black;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1{
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 460px) {
+  .status{
+    right: 50%;
+    margin-right: -60px;
+  }
+
+  .questions{
+    width: 90%;
+  }
+
+  header3, header1{
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .question{
+    font-size: 18px;
+  }
+
+}

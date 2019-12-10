@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Riddle Quiz - Questions</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class='bkgrnd'>
+    <header1>Riddle Quiz</header1>
+    <header3>How well can you Riddle?</header3>
+    
+    <form role='form'>
+      <fieldset class='questions'>
+        <label id='question' for='question' class='question'>Question</label>
+        <label for='space' id='message' class='question'></label>
+        <input type="radio" name="answer" value="answer-1"><a class='answer'>Answer 1</a><a id='answer-1' class='ans-label'></a><br>
+        <input type="radio" name="answer" value="answer-2"><a class='answer'>Answer 2</a><a id='answer-2' class='ans-label'></a><br>
+        <input type="radio" name="answer" value="answer-3"><a class='answer'>Answer 3</a><a id='answer-3' class='ans-label'></a><br>
+        <input type="radio" name="answer" value="answer-4"><a class='answer'>Answer 4</a><a id='answer-4' class='ans-label'></a><br>
+        <div class='button'>
+          <input type='submit' id='submit' value="Next Question">
+        </div>
+      </fieldset>
+    </form>
+
+    <footer class='status'>
+      <ul>
+        <li>Question <a id='Qnum'><a>/5</li>
+        <li>Score <a id='score'><a>/<a id='Qnum'><a></li>
+      </ul>
+    </footer>
+
+  </body>
+
+  <script type="text/javascript" src="js/cuid.js"></script><!-- this must be before script.js so cuid loads and can be used in script.js--> 
+  <script src="js/jquery.js"></script> <!-- this must be before script.js so jQuery loads and can be used in script.js--> 
+  <script src="js/script.js"></script>
+</html>

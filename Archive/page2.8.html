@@ -4,21 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Riddle Quiz - Questions</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body class='bkgrnd'>
     <header1>Riddle Quiz</header1>
     <header3>How well can you Riddle?</header3>
     
-    <form role='form' action='page2.8.html'>
+    <form role='form' action='page2.9.html'>
       <fieldset class='questions'>
         <label for='question' class='question'>Question</label>
-        <input type="radio" name="answer" value="answer-1"><a class='answer'>Answer 1</a><br>
+        <label for='question' class='question'>Nice!! You're Correct!!</label>
+        <input type="radio" name="answer" value="answer-1"><a class='answer'>Answer 1</a><a class='ans-label'>Correct Answer</a><br>
         <input type="radio" name="answer" value="answer-2"><a class='answer'>Answer 2</a><br>
         <input type="radio" name="answer" value="answer-3"><a class='answer'>Answer 3</a><br>
         <input type="radio" name="answer" value="answer-4"><a class='answer'>Answer 4</a><br>
-        <input type='submit' value="Submit">
+        <input type='submit' value="Next Question">
       </fieldset>
     </form>
 
@@ -31,5 +32,7 @@
 
   </body>
 
-  <script src="script.js"></script>
+  <script type="text/javascript" src="js/cuid.js"></script><!-- this must be before script.js so cuid loads and can be used in script.js--> 
+  <script src="js/jquery.js"></script> <!-- this must be before script.js so jQuery loads and can be used in script.js--> 
+  <script src="js/script.js"></script>
 </html>

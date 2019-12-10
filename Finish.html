@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Riddle Quiz</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Riddle Quiz - Final Score</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
 
   <body class='bkgrnd'>
-    <header1>Riddle Quiz</header1>
-    <header3>How well can you Riddle?</header3>
-
-    <form role='button'>
-      <fieldset class='blank'>
-        <button type='submit' id='start' href='Q1.html'>Start Quiz</button>
-      </fieldset>
+      <header1>Riddle Quiz</header1>
+      <header3>How well can you Riddle?</header3>
+    
+    <form role='form'>
+      <h1 id='final-mes'>You're Final Score:</h1>
+      <h1 class='final-mes'><a id='score'></a>/5 Correct</h1>
+      <button id='start-over' type='submit' value='Try Again' href='Finish.html'>Try Again</button>
     </form>
 
-    <footer class='status blank'>
-    </footer>
-
+  </body>
+  
   <script type="text/javascript" src="js/cuid.js"></script><!-- this must be before script.js so cuid loads and can be used in script.js--> 
   <script src="js/jquery.js"></script> <!-- this must be before script.js so jQuery loads and can be used in script.js--> 
   <script src="js/script.js"></script>
