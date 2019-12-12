@@ -72,7 +72,7 @@
     margin: 0;
   }
   
-  header1, header3{
+  h2, h3{
     display: block;
     text-align: center;
     font-size: 35px;
@@ -81,7 +81,7 @@
     mix-blend-mode: exclusion;
   }
   
-  header3{
+  h3{
     font-weight: bolder;
     font-size: 55px;
     margin-bottom: 20px;
